@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ApplicationManifest>app.manifest.xml</ApplicationManifest>
+    <AssemblyName>BuckshotOverlay</AssemblyName>
+    <RootNamespace>BuckshotOverlay</RootNamespace>
+    <PlatformTarget>x64</PlatformTarget>
+    <Platforms>x64</Platforms>
+    <LangVersion>latest</LangVersion>
+    <NoWarn>$(NoWarn);WFO1000;WFO0003;CS8625</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="BuckshotHook.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

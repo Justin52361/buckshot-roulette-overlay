@@ -1,0 +1,14 @@
+# Build output (build.ps1 regenerates dist/; Directory.Build.props sends bin/obj to %LOCALAPPDATA%)
+dist/
+bin/
+obj/
+
+# Runtime diagnostics
+*.log
+scan_dump.txt
+rendered_hud*.png
+
+# IDE
+.vs/
+.vscode/
+*.user
